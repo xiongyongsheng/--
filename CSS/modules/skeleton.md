@@ -77,16 +77,6 @@
 <section class="c-card" id="c-outlets-card" :skeleton-switch="isShowSkeleton">
   <div class="c-card-head">
     <h5>适老网点信息</h5>
-    <div class="c-search">
-      <img src="@/assets/适老网点/编组@3x.png" alt="icon-search" />
-      <input
-        v-model="search"
-        @search="onSearch"
-        type="search"
-        inputmode="search"
-        placeholder="请输入网点名称"
-      />
-    </div>
   </div>
   <article class="c-card-body">
     <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
