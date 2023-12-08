@@ -1,9 +1,9 @@
-#使用 CSS Filter 属性 实现 skeleton (骨架屏) 加载效果
+# 使用 CSS Filter 属性 实现 skeleton (骨架屏) 加载效果
 
     市面上绝大多数骨架屏解决方案都是维护两套代码(业务代码和骨架屏代码分开写)
     本方案诣在只用一套代码,减少后期维护工作量.
 
-##使用方法
+## 使用方法
 
 1. 全局引入下方 css 代码(或者在需要的页面引入).
 2. 准备好`mock data`,在真实的数据返回之前先填充页面.
@@ -11,7 +11,7 @@
 4. (可选)在加上了`skeleton`的标签的祖先标签上加伤`skeleton-switch`属性.
 5. 通过控制`skeleton`属性或者其祖先标签的`skeleton-switch`属性的值为`true`来控制是否显示`骨架加载`效果.
 
-####CSS 代码
+#### CSS 代码
 
 ```css
 *[skeleton-switch="true"] *[skeleton=""],
@@ -57,7 +57,7 @@
 }
 ```
 
-####优缺点
+#### 优缺点
 
 - **缺点**:
 
@@ -71,7 +71,7 @@
   2. 使用简单,不需要复杂的配置.
   3. 代码量小,不需要额外的优化.
 
-####例子
+#### 例子
 
 ```html
 <section class="c-card" id="c-outlets-card" :skeleton-switch="isShowSkeleton">

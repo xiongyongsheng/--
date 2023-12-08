@@ -1,6 +1,6 @@
-#ios 兼容性
+# ios 兼容性
 
-####禁用 ios 搜索框自带的图标
+#### 禁用 ios 搜索框自带的图标
 
 ```css
 /* 禁用搜索框自带的图标 */
@@ -12,7 +12,7 @@ input[inputmode="search"]::-webkit-search-results-decoration {
 }
 ```
 
-####禁用 ios 自带样式,使得自定义样式生效
+#### 禁用 ios 自带样式,使得自定义样式生效
 
 ```css
 /* 禁用ios自带样式,使得自定义样式生效 */
